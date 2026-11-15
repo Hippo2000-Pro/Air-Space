@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: air-space
+    runtime: python
+    plan: starter
+    buildCommand: "echo Air Space utilise uniquement Python standard"
+    startCommand: "python server.py"
+    healthCheckPath: "/"
+    disk:
+      name: air-space-data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: AIR_SPACE_HOST
+        value: 0.0.0.0
+      - key: AIR_SPACE_DB
+        value: /var/data/air_space.sqlite3
+      - key: AIR_SPACE_OPEN_BROWSER
+        value: "0"
+      - key: AIR_SPACE_ALLOW_SETUP
+        value: "1"
+      - key: AIR_SPACE_SETUP_KEY
+        sync: false
+

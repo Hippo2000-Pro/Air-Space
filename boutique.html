@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07111f">
+  <title>Le hangar — Boutique Air Space</title>
+  <meta name="description" content="Explorez les créations Air Space, préparez votre sélection et envoyez une demande sans créer de compte.">
+  <link rel="icon" href="/air-space-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/boutique.css">
+  <link rel="stylesheet" href="/site-pages.css">
+  <script src="/boutique.js" defer></script>
+</head>
+<body class="shop-page">
+  <header class="shop-topbar">
+    <a class="shop-brand" href="/" aria-label="Air Space, accueil"><span class="shop-brand-mark">A</span><span>AIR<span>SPACE</span></span></a>
+    <nav aria-label="Navigation boutique"><a href="/#agenda">Agenda</a><a href="/#creations">Nos créations</a><a class="is-current" href="/boutique">Boutique</a><a href="/#contact">Contact</a></nav>
+    <a class="team-link" href="/admin">Espace équipe <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="shop-hero">
+      <div class="hero-copy">
+        <div class="shop-kicker"><span class="status-light"></span> LE HANGAR AIR SPACE <span class="kicker-divider">/</span> COLLECTION 01</div>
+        <h1>Des idées<br>prêtes à <em>décoller.</em></h1>
+        <p>Des créations imaginées autour des fusées, de l’espace et des anniversaires. Composez votre sélection, puis envoyez une demande à l’équipe — sans compte et sans paiement en ligne.</p>
+        <a class="shop-primary-button" href="#catalogue">Explorer les créations <span>↓</span></a>
+        <div class="hero-footnote"><span>01 — CRÉATIONS DE L’ÉQUIPE</span><span>RHÔNE · LYON</span></div>
+      </div>
+      <div class="hero-visual" aria-label="Illustration d’une fusée Air Space">
+        <div class="visual-scan"></div><div class="visual-orbit orbit-a"></div><div class="visual-orbit orbit-b"></div>
+        <div class="visual-stars">✦ <span>·</span> ✧ <span>·</span> ·</div>
+        <div class="hero-rocket" aria-hidden="true"><span class="rocket-fin fin-left"></span><span class="rocket-fin fin-right"></span><span class="rocket-window"></span><span class="rocket-bodyline"></span><span class="rocket-flame"></span></div>
+        <div class="visual-coordinate">AS—01<br><span>PRÊT AU LANCEMENT</span></div>
+        <div class="visual-readout"><span>COLLECTION ACTIVE</span><b>OBJETS &amp; MISSIONS</b><i>● ● ● ● ○</i></div>
+      </div>
+      <div class="hero-gridline" aria-hidden="true"></div>
+    </section>
+
+    <section class="shop-main" id="catalogue">
+      <aside class="shop-sidebar" aria-label="Navigation du catalogue">
+        <div class="sidebar-heading"><span>EXPLORER</span><span>01—04</span></div>
+        <button class="shop-filter active" data-filter="all"><span class="filter-icon">⌂</span> Tout le catalogue <b id="all-count">00</b></button>
+        <button class="shop-filter" data-filter="rocket"><span class="filter-icon">✦</span> Fusées &amp; décors</button>
+        <button class="shop-filter" data-filter="gift"><span class="filter-icon">◇</span> Idées cadeaux</button>
+        <div class="sidebar-rule"></div>
+        <a class="sidebar-link" href="/#agenda"><span>Prochaines missions</span><b>↗</b></a>
+        <a class="sidebar-link" href="/#videos"><span>Voir les décollages</span><b>↗</b></a>
+        <div class="sidebar-note"><span class="note-stars">✳</span><b>Un article vous plaît ?</b><p>Envoyez une demande. L’équipe confirme ensuite le stock et les modalités avec vous.</p><a href="#demande">Préparer ma demande ↘</a></div>
+        <div class="sidebar-code">AIR SPACE <span>·</span> STUDIO CRÉATIF</div>
+      </aside>
+
+      <div class="catalogue-area">
+        <div class="catalogue-heading"><div><div class="shop-kicker">LE CATALOGUE <span class="kicker-divider">/</span> ÉDITION AIR SPACE</div><h2>La sélection du hangar<span class="heading-dot">.</span></h2></div><span class="catalogue-count" id="catalogue-count">SÉLECTION · 00 ARTICLES</span></div>
+        <div class="catalogue-toolbar"><label class="shop-search"><span aria-hidden="true">⌕</span><input id="shop-search" type="search" placeholder="Rechercher une création…" aria-label="Rechercher un article"><kbd>⌘ K</kbd></label><label class="sort-control"><span>TRIER PAR</span><select id="shop-sort" aria-label="Trier les articles"><option value="newest">Nouveautés</option><option value="price-asc">Prix croissant</option><option value="price-desc">Prix décroissant</option><option value="name">Nom</option></select></label></div>
+        <div id="shop-catalog-grid" class="shop-product-grid" aria-live="polite"><div class="catalogue-loading"><span class="loading-orbit"></span> Ouverture du hangar…</div></div>
+        <div class="catalogue-foot"><span><i></i> DEMANDES OUVERTES</span><span>CHAQUE CRÉATION EST PRÉSENTÉE PAR L’ÉQUIPE AIR SPACE</span></div>
+      </div>
+    </section>
+
+    <section class="shop-request-zone" id="demande">
+      <div class="request-intro"><div class="shop-kicker">02 <span class="kicker-divider">/</span> TRANSMISSION</div><h2>Votre sélection,<br><em>notre prochaine mission.</em></h2><p>Ce formulaire transmet une demande à l’équipe. Elle vous répondra pour confirmer la disponibilité et les détails. Aucun paiement n’est effectué sur cette page.</p><div class="request-step"><span>01</span><span>Choisissez un article et une quantité.</span></div><div class="request-step"><span>02</span><span>Un adulte responsable transmet la demande.</span></div><div class="request-step"><span>03</span><span>L’équipe reprend contact pour confirmer.</span></div></div>
+      <form id="shop-request-form" class="shop-request-form">
+        <div class="form-topline"><span>FORMULAIRE DE DEMANDE</span><span>AS—SHOP / 01</span></div>
+        <h3>Préparer la demande</h3>
+        <label>Article<select name="product_id" id="shop-product-select" required><option value="">Choisissez une création</option></select></label>
+        <div class="shop-form-row"><label>Quantité<input name="quantity" type="number" min="1" max="20" value="1" required></label><label>Nom du parent ou responsable<input name="name" maxlength="100" required autocomplete="name"></label></div>
+        <label>Adresse e-mail<input name="email" type="email" maxlength="254" required autocomplete="email" placeholder="nom@exemple.fr"></label>
+        <label class="shop-consent"><input type="checkbox" name="consent" value="true" required><span>J’accepte qu’Air Space utilise ces informations pour répondre à ma demande.</span></label>
+        <button class="shop-submit" type="submit"><span>Envoyer la demande</span><b>↗</b></button>
+        <p class="shop-form-note">Aucun compte requis · Aucun paiement demandé</p><p id="shop-request-result" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <nav class="app-bottom-nav shop-bottom-nav" aria-label="Navigation rapide"><a data-tab="home" href="/"><span>⌂</span><small>Accueil</small></a><a data-tab="agenda" href="/agenda"><span>▦</span><small>Agenda</small></a><a data-tab="creations" href="/creations"><span>◇</span><small>Créations</small></a><a class="active" aria-current="page" data-tab="shop" href="/boutique"><span>▣</span><small>Boutique</small></a><a data-tab="lab" href="/air-lab"><span>✦</span><small>Air Lab</small></a></nav>
+  <footer class="shop-footer"><a class="shop-brand" href="/"><span class="shop-brand-mark">A</span><span>AIR<span>SPACE</span></span></a><span>UNE BOUTIQUE DE CRÉATIONS · RHÔNE</span><a href="/#contact">Nous contacter <b>↗</b></a></footer>
+</body>
+</html>

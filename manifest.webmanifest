@@ -1,0 +1,18 @@
+{
+  "name": "Air Space — Réservations et spectacles",
+  "short_name": "Air Space",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f4f2eb",
+  "theme_color": "#071a32",
+  "icons": [
+    {
+      "src": "/air-space-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

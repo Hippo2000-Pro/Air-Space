@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#071a32" />
+    <title>Espace équipe — Air Space</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="admin.css" />
+    <script src="admin.js" defer></script>
+  </head>
+  <body class="admin-page">
+    <header class="site-header admin-header">
+      <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">A</span><span>AIR <b>SPACE</b></span></a>
+      <span class="admin-header-label">ESPACE ÉQUIPE</span>
+      <a class="header-cta" href="/?from=team">Voir le site <span aria-hidden="true">↗</span></a>
+    </header>
+    <main class="admin-main">
+      <section class="admin-login" id="login-screen">
+        <div class="login-brand"><span class="eyebrow"><span class="eyebrow-dot"></span> AIR SPACE · RHÔNE</span><h1>Bienvenue dans<br />votre <span>centre de contrôle.</span></h1><p>Connectez-vous avec votre compte personnel Air Space.</p></div>
+        <form class="admin-card login-card" id="login-form">
+          <h2>Connexion équipe</h2>
+          <label>Adresse e-mail<input type="email" name="email" autocomplete="username" required /></label>
+          <label>Mot de passe<input type="password" name="password" autocomplete="current-password" required /></label>
+          <button class="button button-dark" type="submit">Se connecter <span aria-hidden="true">↗</span></button>
+          <p class="admin-message" id="login-message" role="status"></p>
+        </form>
+      </section>
+      <section class="admin-login setup-screen" id="setup-screen" hidden>
+        <div class="login-brand"><span class="eyebrow"><span class="eyebrow-dot"></span> PREMIÈRE CONFIGURATION</span><h1>Crée le compte<br /><span>propriétaire.</span></h1><p>Tu peux ouvrir l’application publique sans compte. Crée celui-ci uniquement quand tu es prêt à gérer les membres et les tarifs.</p></div>
+        <form class="admin-card login-card" id="setup-form">
+          <h2>Configurer l’accès équipe</h2>
+          <label>Nom<input name="name" maxlength="100" autocomplete="name" required /></label>
+          <label>E-mail de connexion<input type="email" name="email" maxlength="254" autocomplete="email" required /></label>
+          <label id="setup-key-label" hidden>Clé secrète donnée par le responsable du site<input type="password" name="setup_key" autocomplete="off" /></label>
+          <label>Mot de passe (12 caractères minimum)<input type="password" name="password" minlength="12" autocomplete="new-password" required /></label>
+          <label>Confirmer le mot de passe<input type="password" name="confirmation" minlength="12" autocomplete="new-password" required /></label>
+          <button class="button button-dark" type="submit">Créer le compte propriétaire <span aria-hidden="true">↗</span></button>
+          <p class="admin-message" id="setup-message" role="status"></p>
+        </form>
+      </section>
+      <section class="change-password-screen" id="password-screen" hidden>
+        <form class="admin-card login-card" id="password-form">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> SÉCURISATION DU COMPTE</p>
+          <h2>Choisissez votre mot de passe personnel</h2>
+          <p>Le mot de passe temporaire doit être remplacé avant d’accéder à l’espace équipe.</p>
+          <label>Mot de passe actuel<input type="password" name="current_password" autocomplete="current-password" required /></label>
+          <label>Nouveau mot de passe (12 caractères minimum)<input type="password" name="new_password" minlength="12" autocomplete="new-password" required /></label>
+          <button class="button button-dark" type="submit">Enregistrer le nouveau mot de passe</button>
+          <p class="admin-message" id="password-message" role="status"></p>
+        </form>
+      </section>
+      <section class="admin-app" id="app-screen" hidden>
+        <aside class="admin-sidebar">
+          <div class="sidebar-title">AIR SPACE <span>CONSOLE</span></div>
+          <nav id="admin-nav" aria-label="Navigation de l’espace équipe"></nav>
+          <div class="sidebar-bottom"><div class="user-avatar" id="user-avatar">A</div><div class="user-identity"><b id="user-name"></b><span id="user-role"></span></div><button class="logout-icon" id="logout-button" aria-label="Se déconnecter" title="Se déconnecter">↗</button></div>
+        </aside>
+        <div class="admin-workspace">
+          <div class="workspace-topline"><span id="breadcrumb">VUE D’ENSEMBLE</span><span class="online-dot">ESPACE PRIVÉ</span></div>
+          <div class="workspace-content" id="workspace-content"></div>
+        </div>
+      </section>
+    </main>
+    <footer class="admin-footer"><a class="brand footer-brand" href="/?from=team"><span class="brand-mark" aria-hidden="true">A</span><span>AIR <b>SPACE</b></span></a><span>ACCÈS ÉQUIPE PERSONNEL ET SÉCURISÉ</span><a href="/?from=team">Retour au site ↗</a></footer>
+  </body>
+</html>

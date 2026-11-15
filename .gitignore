@@ -1,0 +1,4 @@
+__pycache__/
+air_space.sqlite3
+air_space.sqlite3-shm
+air_space.sqlite3-wal

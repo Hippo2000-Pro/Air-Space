@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Accès équipe Air Space">
+  <rect width="64" height="64" rx="4" fill="#071326"/>
+  <path d="M32 7 7 55h50L32 7Z" fill="#38caff"/>
+  <path d="m32 19-17 32h34L32 19Z" fill="#071326"/>
+  <path d="M24 42h16l-8-15-8 15Z" fill="#38caff"/>
+</svg>
